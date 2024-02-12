@@ -93,17 +93,11 @@ with open('lottery_history.txt', 'r') as file:
                 # win_number string is converted into an integer and assigned to history_integers variable
                 win_num_integer = int(win_number)
 
-                # if win_num_integer value is a key in the number_frequency dictionary, execute this code
-                if win_num_integer in number_frequency:
-
-                    # 1 is added to the value of the current key, win_num_integer, during this iteration
-                    number_frequency[win_num_integer] += 1
-
-                # if win_num_integer value is NOT a key in the number_frequency dictionary, execute this code
-                else:
-                    # A key is created, win_num_integer, with the value of 1
-                    # The new key-value pair is added using dictionary assignment
-                    number_frequency[win_num_integer] = 1
+                # get() method returns the value of a specific dictionary key, win_num_integer
+                # 0 is set as the default value to return if the key does not exist in the dictionary yet
+                # 1 is added to either an existing key's value or a new key with a value of 0
+                # The dictionary, number_frequency, will either be assigned an updated value or a new key-value pair
+                number_frequency[win_num_integer] = number_frequency.get(win_num_integer, 0) + 1
 
             # except statement catches the ValueError handle exception that may occur
             # ValueError is raised when an argument is received with the correct type, but invalid value
