@@ -4,7 +4,7 @@
 # Initializing list named cheese with 3 values
 cheese = ['cheddar', 'stilton', 'cornish yarg']
 
-# trying to add a 'oke' like a string to the list
+# trying to add 'oke' like a string to the list
 cheese += 'oke'
 print(f"\n{'':<0} {cheese}")
 
@@ -45,4 +45,3 @@ print(f"{'':<0} {cheese}")
 # sorting the list by default (alphabetically)
 cheese.sort()
 print(f"{'':<1}Sorted cheese: {cheese}")
-
