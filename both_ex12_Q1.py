@@ -45,3 +45,19 @@ print(f"{'':<0} {cheese}")
 # sorting the list by default (alphabetically)
 cheese.sort()
 print(f"{'':<1}Sorted cheese: {cheese}")
+
+# Jen Section
+# Created a list with 3 items and stored in it in the cheese variable
+print('\n', '-' * 100)
+
+cheese2 = ['Cheddar', 'Stilton', 'Cornish Yarg']
+
+print('QUESTION 1\n')
+# Adding Oke in this way adds each character into the list
+# cheese += 'Oke'
+
+# Square brackets MUST be included to add the whole word as one item in the list
+cheese2 += ['Oke', 'Mozzarella']
+
+# Prints the new list with the additional two items
+print('Added two items to cheese list:\n', cheese2)
