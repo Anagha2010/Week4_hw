@@ -104,15 +104,18 @@ with open('lottery_history.txt', 'r') as file:
             except ValueError:
 
                 # Prints a string informing the user that the value in win_number is not an integer
+                # This error happens when trying to convert a string to an integer, but the string is not a number
+                # Since the randint() method is used, it is an unlikely error, unless the input() function is used
                 print(f'Error: {win_number} is not an integer.')
 
-# items method returns a key-value pair, winning number and frequency number, from the number_frequency dictionary
+# items method returns key-value pairs as tuples, win number and freq number, from the number_frequency dictionary
+# items method always returns a sequence of tuples from a dictionary
 # key= specifies a function that determines the sorting criteria for the items of an iterable, an optional parameter
 # lambda defines a small, one-line function without giving it a name, an anonymous function
-# win_freq: represents each key-value pair
-# win_freq[1] specifies the value to use for sorting, the second item of each pair, frequency number
+# win_freq: represents each key-value pair as a tuple
+# win_freq[1] specifies the value to use for sorting, the second value of each pair, frequency number
 # reverse= is a parameter of the sorted function. 'True' sorts the list in descending order
-# sorted function returned and stored tuples into a sorted list, assigned to sorted_items variables
+# sorted function returns and stores tuples into a sorted list, assigned to sorted_items variable
 sorted_items = sorted(number_frequency.items(), key=lambda win_freq: win_freq[1], reverse=True)
 
 # upper method returns the string in uppercase and prints it
