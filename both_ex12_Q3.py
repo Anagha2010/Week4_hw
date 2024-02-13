@@ -20,9 +20,11 @@ while not full:
 # the lotto set is printed out.
 print(f'\nlotto_set = {lotto_set}')
 
+# ---------------------------------------------------------------------------------------
+
 print('\n', '-' * 100, '\nQUESTION 3 - Lottery\n')
 
-# Stored an empty set to random_numbers variable
+# Stored an empty set, unordered and mutable, to random_numbers variable
 random_numbers = set()
 
 # length function checks how many items are in the set, random_numbers,
@@ -36,7 +38,7 @@ while not len(random_numbers) == 6:
     random_numbers.add(random.randint(1, 50))
 
 # tuple method constructs a tuple from the random_numbers set
-# As a tuple, the order of items will now remain the same
+# As a tuple, the order of items will now remain the same and immutable
 numbers_tuple = tuple(random_numbers)
 
 # enumerate function returns the index and value of each item in numbers_tuple
