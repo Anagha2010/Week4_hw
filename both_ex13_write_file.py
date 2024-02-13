@@ -28,7 +28,7 @@ file.writelines(limerick1_str)
 # close the nests.txt file
 file.close()
 
-# DOLPHIN TXT - Jen
+# DOLPHIN TXT - Jen -------------------------------------------------------------------------
 
 # Created a list of values as strings, ending with a new line \n and assigned to the lines variable
 lines_two = ['In the sea so blue,\n', 'with a flip and a "woo-hoo,"\n', 'dolphins play and jest,\n',

@@ -55,8 +55,7 @@ print(lines_list2)
 # close the file nests.txt
 file.close()
 
-
-# DOLPHIN TXT - Jen
+# DOLPHIN TXT - Jen --------------------------------------------------------------------
 print('\n', '-' * 100, '\n')
 
 # Created an empty list and assigned it to the dolphin_word_list variable
@@ -72,7 +71,8 @@ with open('dolphin.txt', 'r') as dolphin_file:
     # the next function returns the next item in an iterable object, like iterator
     # An iterator is an object that allows sequential access to elements in a stream of data.
     # A file object returned by the open() function is an iterator
-    # next() reads the next line from the file and returns it. In this case, it is the 1st line stored in a variable
+    # next() reads the next line from the file and returns it.
+    # In this case, it is the 1st line stored in a variable, first_line
     first_line = next(dolphin_file)
 
     # A string about the returned data type is printed, including the type of the first_line variable
